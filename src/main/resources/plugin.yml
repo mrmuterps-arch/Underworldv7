@@ -1,0 +1,23 @@
+name: Underworld
+version: '${project.version}'
+main: ru.mrmuter.underworld.UnderworldPlugin
+api-version: '1.21'
+author: MrMuter
+description: Забытое измерение в пустоте между обычным миром и адом
+
+commands:
+  underworld:
+    description: Управление измерением пустоты
+    usage: /underworld <tp|leave|info>
+    aliases: [uw, пустота]
+
+permissions:
+  underworld.tp:
+    description: Телепорт в подмир командой
+    default: op
+  underworld.build:
+    description: Право строить/ломать в подмире (Хранители)
+    default: op
+  underworld.admin:
+    description: Админ-команды подмира
+    default: op
